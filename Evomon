@@ -1,9 +1,3 @@
--- ================================================================
---  EvomonRoblox_Loader.lua
---  Run this file WITHOUT obfuscation.
---  Loads Rayfield + sets up hookmetamethod (both break when obfuscated).
--- ================================================================
-
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 -- Reset global state
@@ -28,7 +22,6 @@ end
 
 _G.__EvomRayfield = Rayfield
 
--- Setup hookmetamethod here (NOT obfuscated — obfuscators break varargs inside hooks)
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ReqEnterNpcBattle = ReplicatedStorage:WaitForChild("Remote"):WaitForChild("Battle"):WaitForChild("ReqEnterNpcBattle")
 
