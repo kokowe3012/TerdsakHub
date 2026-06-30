@@ -4,8 +4,6 @@
 --  Loads Rayfield + sets up hookmetamethod (both break when obfuscated).
 -- ================================================================
 
-if not game:IsLoaded() then game.Loaded:Wait() end
-
 -- Reset global state
 _G.catchMob         = false
 _G.mobDeadCheck     = false
